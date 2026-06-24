@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escudo Seguro • Proteja sua Vida com Alegria!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap');
+        
+        body {
+            font-family: 'Poppins', system-ui, sans-serif;
+        }
+        .hero {
+            background: linear-gradient(135deg, #22c55e 0%, #10b981 100%), url('https://picsum.photos/id/1015/2000/1200');
+            background-size: cover;
+            background-position: center;
+        }
+        .card {
+            transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .card:hover {
+            transform: translateY(-15px) scale(1.05);
+        }
+        .happy-btn {
+            background: linear-gradient(90deg, #22c55e, #eab308);
+        }
+        .section-title {
+            font-family: 'Playfair Display', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-emerald-50 via-white to-amber-50 text-gray-800">
+
+    <!-- HEADER -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <span class="text-4xl">🛡️</span>
+                <div>
+                    <h1 class="text-3xl font-bold text-emerald-600">Escudo Seguro</h1>
+                    <p class="text-sm text-emerald-700 -mt-1">Proteção com alegria</p>
+                </div>
+            </div>
+            <nav class="hidden md:flex gap-8 text-lg font-medium">
+                <a href="#golpes" class="hover:text-emerald-600 transition">Golpes</a>
+                <a href="#sinais" class="hover:text-emerald-600 transition">Sinais</a>
+                <a href="#proteger" class="hover:text-emerald-600 transition">Se Proteger</a>
+                <a href="#exemplos" class="hover:text-emerald-600 transition">Exemplos</a>
+                <a href="#dicas" class="hover:text-emerald-600 transition">Dicas Extras</a>
+            </nav>
+            <button onclick="document.getElementById('proteger').scrollIntoView({behavior:'smooth'})" 
+                    class="happy-btn text-white px-8 py-4 rounded-2xl font-bold text-lg shadow-lg hover:shadow-xl transition flex items-center gap-2">
+                <i class="fas fa-shield-alt"></i>
+                Quero ficar seguro!
+            </button>
+        </div>
+    </header>
+
+    <!-- HERO ALEGRE -->
+    <section class="hero h-screen flex items-center text-white">
+        <div class="max-w-5xl mx-auto text-center px-6">
+            <div class="inline-flex items-center gap-3 bg-white/20 backdrop-blur-md px-6 py-3 rounded-full mb-8">
+                <span class="text-3xl">🎉</span>
+                <span class="font-semibold">Você está no lugar certo para viver tranquilo!</span>
+            </div>
+            <h2 class="text-6xl md:text-7xl font-bold leading-tight mb-6">
+                Golpes não vão te pegar!<br>
+                <span class="text-amber-300">Seja esperto e feliz</span>
+            </h2>
+            <p class="text-2xl md:text-3xl max-w-2xl mx-auto mb-12 text-emerald-100">
+                Aprenda de forma leve, prática e divertida como proteger seu dinheiro, sua família e sua paz de espírito.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                <button onclick="document.getElementById('golpes').scrollIntoView({behavior:'smooth'})" 
+                        class="happy-btn text-white text-xl px-12 py-6 rounded-3xl font-bold shadow-xl hover:scale-105 transition flex items-center justify-center gap-3">
+                    Conhecer os Golpes <span class="text-2xl">→</span>
+                </button>
+            </div>
+            <p class="mt-16 text-emerald-100 text-lg">+ de 120 mil pessoas já se protegeram com informações como estas ❤️</p>
+        </div>
+    </section>
+
+    <!-- TIPOS DE GOLPES -->
+    <section id="golpes" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="section-title text-5xl font-bold text-center text-emerald-700 mb-6">Principais Golpes de 2026</h2>
+            <p class="text-center text-xl text-gray-600 max-w-2xl mx-auto mb-16">
+                Conheça os mais comuns de forma clara e direta para você nunca cair neles
+            </p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="card bg-white border-2 border-emerald-100 rounded-3xl p-8 shadow-xl">
+                    <div class="text-6xl mb-6">📱</div>
+                    <h3 class="text-2xl font-bold mb-3 text-emerald-700">Phishing Inteligente</h3>
+                    <p class="text-gray-600 mb-6">
+                        Mensagens ou ligações que parecem vir do seu banco, loja ou até de um familiar. Usam IA para clonar voz e texto.
+                    </p>
+                    <div class="bg-emerald-50 border border-emerald-200 p-5 rounded-2xl text-sm">
+                        <strong>Exemplo novo:</strong> "Oi filho, meu celular quebrou. Me faz um Pix de R$ 800 urgente?"
+                    </div>
+                </div>
+
+                <div class="card bg-white border-2 border-emerald-100 rounded-3xl p-8 shadow-xl">
+                    <div class="text-6xl mb-6">💰</div>
+                    <h3 class="text-2xl font-bold mb-3 text-emerald-700">Investimento Milagroso</h3>
+                    <p class="text-gray-600 mb-6">
+                        Prometem ganhos absurdos com criptomoedas, robôs ou "método secreto".
+                    </p>
+                    <div class="bg-emerald-50 border border-emerald-200 p-5 rounded-2xl text-sm">
+                        <strong>Exemplo novo:</strong> Anúncios no Instagram com depoimentos falsos e convite para grupo VIP no Telegram.
+                    </div>
+                </div>
+
+                <div class="card bg-white border-2 border-emerald-100 rounded-3xl p-8 shadow-xl">
+                    <div class="text-6xl mb-6">❤️</div>
+                    <h3 class="text-2xl font-bold mb-3 text-emerald-700">Golpe do Romance</h3>
+                    <p class="text-gray-600 mb-6">
+                        Alguém conquista sua confiança online e depois pede dinheiro por "emergências".
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SINAIS DE ALERTA -->
+    <section id="sinais" class="py-24 bg-gradient-to-br from-amber-100 to-emerald-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="section-title text-5xl font-bold text-center text-amber-700 mb-16">Sinais de Alerta 🛑</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center bg-white rounded-3xl p-8 shadow-lg">
+                    <i class="fas fa-clock text-5xl text-amber-500 mb-4"></i>
+                    <h4 class="font-bold text-xl">Pressa</h4>
+                    <p class="text-gray-600">"Tem que ser agora!"</p>
+                </div>
+                <div class="text-center bg-white rounded-3xl p-8 shadow-lg">
+                    <i class="fas fa-gift text-5xl text-amber-500 mb-4"></i>
+                    <h4 class="font-bold text-xl">Prêmio ou Lucro Fácil</h4>
+                    <p class="text-gray-600">Coisas boas demais para ser verdade</p>
+                </div>
+                <div class="text-center bg-white rounded-3xl p-8 shadow-lg">
+                    <i class="fas fa-key text-5xl text-amber-500 mb-4"></i>
+                    <h4 class="font-bold text-xl">Pedem Senhas ou Códigos</h4>
+                    <p class="text-gray-600">Nunca compartilhe!</p>
+                </div>
+                <div class="text-center bg-white rounded-3xl p-8 shadow-lg">
+                    <i class="fas fa-user-ninja text-5xl text-amber-500 mb-4"></i>
+                    <h4 class="font-bold text-xl">Desconhecido</h4>
+                    <p class="text-gray-600">Número ou e-mail estranho</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMO SE PROTEGER -->
+    <section id="proteger" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="section-title text-5xl font-bold text-center text-emerald-700 mb-6">Como se Proteger com Alegria</h2>
+            <p class="text-center text-xl text-gray-600 max-w-xl mx-auto mb-16">
+                Regras simples que vão te deixar mais confiante e tranquilo
+            </p>
+            
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-8">
+                    <div class="flex gap-6">
+                        <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center text-3xl flex-shrink-0">1</div>
+                        <div>
+                            <h4 class="font-semibold text-2xl">Nunca clique em links suspeitos</h4>
+                            <p class="text-gray-600">Sempre digite o endereço do banco ou site diretamente no navegador.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center text-3xl flex-shrink-0">2</div>
+                        <div>
+                            <h4 class="font-semibold text-2xl">Ative 2FA em tudo</h4>
+                            <p class="text-gray-600">Proteção extra com código no celular.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center text-3xl flex-shrink-0">3</div>
+                        <div>
+                            <h4 class="font-semibold text-2xl">Converse com alguém de confiança</h4>
+                            <p class="text-gray-600">Antes de transferir dinheiro, ligue para um familiar.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-emerald-600 to-teal-600 text-white p-12 rounded-3xl shadow-2xl">
+                    <h3 class="text-3xl font-bold mb-8">Se algo der errado...</h3>
+                    <ol class="space-y-6 text-lg">
+                        <li class="flex gap-4"><span class="font-bold">1.</span> Bloqueie sua conta no app do banco imediatamente</li>
+                        <li class="flex gap-4"><span class="font-bold">2.</span> Faça Boletim de Ocorrência online</li>
+                        <li class="flex gap-4"><span class="font-bold">3.</span> Peça estorno (muitos casos são resolvidos!)</li>
+                    </ol>
+                    <button class="mt-10 w-full bg-white text-emerald-700 py-4 rounded-2xl font-bold text-lg">
+                        Denunciar agora
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXEMPLOS REAIS -->
+    <section id="exemplos" class="py-24 bg-emerald-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="section-title text-5xl font-bold text-center mb-16 text-emerald-700">Exemplos Reais e Atualizados</h2>
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="bg-white p-10 rounded-3xl shadow-xl card">
+                    <span class="inline-block px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium mb-6">Novo 2026</span>
+                    <h3 class="text-2xl font-bold mb-4">Voz Clonada por IA</h3>
+                    <p class="text-gray-600">Golpistas usam inteligência artificial para imitar a voz de parentes pedindo dinheiro urgente. Sempre confirme por outra forma!</p>
+                </div>
+                <div class="bg-white p-10 rounded-3xl shadow-xl card">
+                    <span class="inline-block px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium mb-6">Novo 2026</span>
+                    <h3 class="text-2xl font-bold mb-4">Falso "Reembolso do Governo"</h3>
+                    <p class="text-gray-600">Mensagens oferecendo restituição do IR ou auxílios. Pedem dados ou taxa para liberar. O governo nunca pede Pix!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DICAS EXTRAS -->
+    <section id="dicas" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="section-title text-5xl font-bold text-center mb-16 text-emerald-700">Dicas Extras para Viver Tranquilo</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="text-6xl mb-6">🔍</div>
+                    <h4 class="font-semibold mb-3">Verifique sempre</h4>
+                    <p class="text-gray-600">Use o site oficial do banco e confira o cadeado de segurança.</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-6xl mb-6">📲</div>
+                    <h4 class="font-semibold mb-3">Apps de segurança</h4>
+                    <p class="text-gray-600">Avast, Kaspersky ou o antivírus do seu celular.</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-6xl mb-6">👨‍👩‍👧</div>
+                    <h4 class="font-semibold mb-3">Eduque a família</h4>
+                    <p class="text-gray-600">Compartilhe este site com quem você ama.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-emerald-800 text-emerald-100 py-16">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-3xl font-bold mb-4">Escudo Seguro © 2026</p>
+            <p class="max-w-md mx-auto">Viva com mais leveza sabendo que você está protegido. Compartilhe o conhecimento!</p>
+            <div class="mt-12 text-sm opacity-75">
+                Fontes: Banco Central • Febraban • Polícia Federal
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
